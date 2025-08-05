@@ -1,0 +1,250 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+header h1 {
+  color: #ff6347;
+  font-size: 1.8em;
+}
+
+
+.subtitle {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.6em;
+  color: #ff6347;
+}
+
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+
+.bebida-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bebida-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.6);
+}
+
+
+.bebida-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.info {
+  padding: 15px;
+}
+
+.info h3 {
+  color: #ff6347;
+  margin-bottom: 8px;
+  font-size: 1.3em;
+}
+
+.info p {
+  margin-bottom: 12px;
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+
+button,
+.btn {
+  background-color: #ff6347;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #e5533d;
+}
+
+
+.produto-detalhe {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-top: 30px;
+}
+
+
+.produto-detalhe img {
+  width: 100%;
+  max-width: 350px; 
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.produto-detalhe div {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.produto-detalhe h2 {
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.produto-detalhe p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.preco-detalhe {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.voltar {
+  display: inline-block;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #ff6347;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.voltar:hover {
+  color: #e5533d;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1f1f1f;
+  color: #888;
+  font-size: 0.9em;
+  width: 100%;
+  margin-top: auto;
+}
+
+
+main {
+  padding-bottom: 40px;
+}
+
+main.container {
+  flex: 1;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ff6347;
+  font-size: 1.2em;
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-buttons .btn {
+  min-width: 90px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.btn-cancel {
+  background-color: #555;
+}
+
+.btn-cancel:hover {
+  background-color: #888;
+}
