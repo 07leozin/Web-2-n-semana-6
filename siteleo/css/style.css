@@ -248,3 +248,18 @@ main.container {
 .btn-cancel:hover {
   background-color: #888;
 }
+/* style.css */
+.btn-admin {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn-admin:hover {
+    background: #ff9100;
+}
+

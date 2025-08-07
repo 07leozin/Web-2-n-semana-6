@@ -11,6 +11,10 @@
   <header>
     <div class="container">
       <h1>🍹 Café & Bar Premium</h1>
+     
+      <link rel="stylesheet" href="style.css">
+      <a href="login.php" class="btn-admin">Área Administrativa</a>
+
     </div>
   </header>
 
